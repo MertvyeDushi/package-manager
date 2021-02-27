@@ -251,13 +251,13 @@ section:not(:last-child) {
 		border: none;
 		border-radius: 0;
 
-		padding: 0 5rem 4rem;
+		padding: 6rem 5rem 4rem;
 		margin: 0;
 	}
 
 
 	@media screen and (max-width: $iphone_plus) {
-		padding: 0 2rem 4rem;
+		padding: 8rem 2rem 4rem;
 	}
 
 
