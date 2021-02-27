@@ -1,0 +1,47 @@
+
+	
+.form {
+	width: 100%;
+}
+
+
+.input {
+	width: 100%;
+	height: 4.2rem;
+	border-radius: .4rem;
+	border: none;
+	background: rgba($color_blue, .06);
+
+	padding: 1.2rem;
+	margin-top: .2rem;
+
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+
+	transition: all .2s;
+
+
+	&:focus {
+		background: darken($color_blur_with_focus, .1);
+		box-shadow: 2rem 2rem 6rem #cccccc, -2rem -2rem 6rem #ffffff;
+	
+		transform: scale(1.19);
+
+
+		@media screen and (max-width: $phone) {
+			transform: unset;
+		}
+	}
+
+
+	@media screen and (max-width: $phone) {
+		height: 7rem;
+		font-size: 128%;
+	}
+
+
+	@media screen and (max-width: $iphone_plus) {
+		font-size: inherit;
+		height: 5.2rem;
+	}
+
+}

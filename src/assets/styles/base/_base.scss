@@ -1,0 +1,71 @@
+
+// Normalise
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+*:active, *:hover, *:focus {
+	outline: 0;
+	outline-offset: 0;
+}
+
+
+button {
+	border: none;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+// Base
+
+html {
+	font-size: 62.5%;
+}
+
+
+body {
+	box-sizing: border-box;
+	position: relative;
+}
+
+
+.container {
+	margin: 0 auto;
+	
+
+	@media screen and (max-width: $tablet) {
+		width: 100%;
+
+		padding: 0 2rem;
+		margin: 0;
+	}
+		
+
+	@media screen and (min-width: $tablet) {
+		width: 750px;
+	}
+		
+
+	@media screen and (min-width: $small_desktop) {
+		width: 970px;
+	}
+		
+
+	@media screen and (min-width: $desktop) {
+		width: 1250px;
+	}
+		
+
+	@media screen and (min-width: $big_desktop) {
+		width: $container_max_width;
+	}
+}

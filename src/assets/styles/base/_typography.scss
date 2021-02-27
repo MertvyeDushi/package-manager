@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+
+body {
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: $default_font_size;
+	line-height: 1.7;
+
+
+	@media screen and (max-width: $phone) {
+		font-size: $default_font_size__mobile;
+	}
+}
+
+
+.secondary-title {
+	font-size: $secondary_font_size;
+	text-align: left;
+	font-weight: bold;
+	line-height: 5.2rem;
+
+
+	@media screen and (max-width: $desktop) {
+		font-size: $secondary_font_size__mobile;
+		line-height: 4.6rem;
+	}
+}
+
+
+.article-title {
+	font-size: $article_font_size !important;
+	text-align: left;
+	font-weight: bold;
+	line-height: 2.8rem;
+	color: $color_blue;
+}
+
+
+.caption-text {
+	font-size: $caption_font_size;
+	text-align: left;
+	font-weight: normal;
+	line-height: 3.1rem;
+	color: lighten($color_black_light, 1%);
+
+
+	@media screen and (max-width: $phone) {
+		font-size: $caption_font_size__mobile;
+		line-height: 3.1rem;
+	}
+}
+
+
+.description-text {
+	font-size: $description_font_size;
+	text-align: left;
+	font-weight: normal;
+	line-height: 3.1rem;
+	color: $color_grey;
+
+
+	@media screen and (max-width: $phone) {
+		font-size: $caption_font_size__mobile;
+		line-height: 3.1rem;
+	}
+
+
+	&--main {
+		font-size: 120%;
+		color: $color_black_light;
+	}
+}
+
+::-webkit-input-placeholder {
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+
+:-moz-placeholder {
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+	
+
+::-moz-placeholder {
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+
+:-ms-input-placeholder {
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+
+:-o-input-placeholder {
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+
+::placeholder {
+	font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}

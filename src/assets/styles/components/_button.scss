@@ -1,0 +1,120 @@
+
+// Button
+
+.btn {
+
+	&:link,
+	&:visited,
+	& {
+		font-size: $default_font_size;
+		text-decoration: none;
+		text-align: center;
+		line-height: 1.7;
+
+		padding: .9rem 1rem;
+		border-radius: 5rem;
+		display: inline-block;
+
+		transition: all .25s;
+		position: relative;
+		cursor: pointer;
+
+		will-change: transform;
+
+
+		@media only screen and (max-width: $small_desktop) {
+			font-size: calc( #{ $default_font_size } / 1.3 ); // 1.5rem;
+		}
+
+
+		@media screen and (max-width: $phone) {
+			font-size: 128%;
+		}
+
+
+		@media screen and (max-width: $iphone_plus) {
+			font-size: inherit;
+		}
+
+	}
+
+
+	&:hover {
+		transform: translateY(-.3rem);
+		box-shadow: 0 .7rem 1.5rem rgba($color_black, .2);
+	}
+
+
+	&:active  {
+		transform: translate(0);
+		box-shadow: 0 .5rem 1rem rgba($color_black, .2);
+	}
+
+
+	&--default, &--blue, &--red {
+		background-color: rgba($color_blue, .2);
+		color: $color_black_light;
+		
+		transition: all .2s;
+
+		cursor: pointer;
+
+
+		&::before {
+			border: none;
+		}
+
+		
+		&:hover {
+			transform: translateY(-.2rem);
+			box-shadow: 0 .9rem 1.4rem rgba($color_blue, .15);
+		}
+
+
+		&:active {
+			transform: translateY(-.1rem);
+			box-shadow: 0 .5rem .8rem rgba($color_blue, .2);
+		}
+	
+	}
+
+
+	&--blue {
+		background-color: $color_blue_light;
+	}
+}
+
+
+.remove-btn {
+	mask: url(~@/assets/img/icon_remove.svg) no-repeat center / contain;
+
+	background: $color_remove_btn;
+
+	width: 2rem;
+	height: 2rem;
+
+	transition: all .2s;
+
+	cursor: pointer;
+}
+
+
+.input:focus + .remove-btn {
+	background: $color_black;
+	transform: translateX(290%);
+
+
+	@media screen and (max-width: $phone) {
+		transform: unset;
+	}
+}
+
+
+.hide__btn {
+	cursor: pointer;
+
+	background: url("~@/assets/img/hide__btn.svg") no-repeat center / contain;
+
+	width: 2rem;
+	height: 2rem;
+}
