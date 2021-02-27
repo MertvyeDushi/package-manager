@@ -231,11 +231,9 @@ section:not(:last-child) {
 	max-width: 85rem;
 	padding: 4rem 8rem 3rem;
 
-	background: $color_white;
+	background: #f2f3f7;
 	border: 1px solid $color_white_grey;
 	border-radius: .5rem;
-
-	background-color: $color_white;
 
 
 	@media screen and (max-width: $phone) {
